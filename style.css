@@ -1,0 +1,160 @@
+/* Body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom right, #ffc0cb, #dda0dd);
+  text-align: center;
+  color: #444;
+  overflow-x: hidden;
+}
+
+/* Floating cherry blossom */
+.floating-blossom {
+  position: fixed;
+  font-size: 2em;
+  color: #ffb7c5;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Title with pink glow */
+.title {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 15px #ff69b4,
+    0 0 20px #ff69b4;
+  margin-top: 50px;
+}
+
+/* Rainbow animated main message */
+.message {
+  font-size: 1.3em;
+  margin: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400% 100%;
+  animation: rainbowShift 6s linear infinite;
+}
+
+@keyframes rainbowShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Unicorn GIF */
+.unicorn-container {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+}
+
+.unicorn {
+  width: 100%;
+  display: block;
+}
+
+/* Pweety image */
+.pweety-container img {
+  width: 150px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Bouncing heart */
+.heart {
+  font-size: 4em;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 50%, 100% { transform: scale(1); }
+  25%, 75% { transform: scale(1.3); }
+}
+
+/* Buttons with white text + pink glow */
+button {
+  background-color: #ff69b4;
+  border: none;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 15px #ff69b4,
+    0 0 20px #ff69b4;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+/* Surprise message & WHY I LOVE YOU glowing purple */
+.glow-purple {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #800080,
+    0 0 10px #800080,
+    0 0 15px #800080,
+    0 0 20px #800080;
+}
+
+/* WHY I LOVE YOU list */
+.hidden { display: none; }
+
+#loveReasons {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+
+#loveReasons li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.6s forwards;
+  margin: 8px 0;
+}
+
+.reason-img {
+  width: 150px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Final glowing message */
+.final-message {
+  font-size: 1.4em;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #006400,
+    0 0 10px #006400,
+    0 0 15px #006400,
+    0 0 20px #006400;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/* Ohana image at the bottom */
+.ohana-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ohana-img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
